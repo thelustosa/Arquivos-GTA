@@ -1,0 +1,37 @@
+# Dependências
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Configurações e variáveis de ambiente
+.env
+server/.env
+
+# Uploads de mídia (evita subir imagens/vídeos de testes do usuário)
+server/uploads/profiles/*
+server/uploads/covers/*
+server/uploads/posts/*
+!server/uploads/profiles/.gitkeep
+!server/uploads/covers/.gitkeep
+!server/uploads/posts/.gitkeep
+
+# Arquivos de log
+*.log
+client/client.log
+server/server.log
+
+# Diretório de build
+client/dist/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configurações de IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
